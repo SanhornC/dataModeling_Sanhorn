@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combine 
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+              <th scope = "col">Event Stage</th>
+              <th scope = "col">Date</th>
+              <th scope = "col">Time</th>
+              <th scope = "col">Place</th>
+              <th cope = "col">Opponent</th>
+              <th cope = "col">Odds</th>
+            </tr>
+          </thead>
+          <tr> <!-- Row 2 -->
+            <td>Regular Season</td>
+            <td>44170</td>
+            <td>0.625</td>
+            <td>Xinzhuang Stadium</td>
+            <td>Taoyuan Puyuan Architecture vs. Bank of Taiwan</td>
+            <td>73 - 81</td>
+          </tr>
+          <tr> <!-- Row 3 -->
+            <td>Regular Season</td>
+            <td>44170</td>
+            <td>0.7291666667</td>
+            <td>Xinzhuang Stadium</td>
+            <td>Yulona Zhijie vs. Taiwan Beer</td>
+            <td>69 - 82</td>
+          </tr>
+          <tr> <!-- Row 4 -->
+            <td>Regular Season</td>
+            <td>44171</td>
+            <td>0.625</td>
+            <td>Xinzhuang Stadium</td>
+            <td>Kaohsiung Jiutai Technology vs. Bank of Taiwan</td>
+            <td>86 - 74</td>
+          </tr>
+
+          <tr> <!-- Row 5 -->
+            <td>Regular Season</td>
+            <td>44171</td>
+            <td>0.7083333333</td>
+            <td>Xinzhuang Stadium</td>
+            <td>Taiwan Beer vs. Taoyuan Puyuan Construction</td>
+            <td>77 - 64</td>
+          </tr>
+    </table>
+
+    <form action = "form1Receive.html" method="post">
+      <hr>
+      <label for="bookname">Book Name:</label>
+      <input type="text" name="bookname" id="bookname" required>
+      
+      <hr>
+
+      <label for="bookauthor">Book Author:</label>
+      <input type="text" name="bookauthor" id="bookauthor" required>
+
+      <hr>
+      <label for="isbn">ISBN Input:</label>
+      <input type="number"  min="0" name="isbn" id="isbn" required>
+      <hr>
+
+      <section class="drop-down">
+          <label for="bok">Book Type</label>
+          <input list="book" id="bok" name="bok">
+          <datalist id="book">
+            <option value="novel"></option>
+            <option value="manga"></option>
+            <option value="magazine"></option>
+            <option value="children"></option>
+            <option value="textbook"></option>
+          </datalist>
+        </section>
+
+
+      <hr>
+      <section class= "genre">
+          <span>Genre?</span>
+          <br>
+          <input type="checkbox" name="genre" id="FairyTale" value="FairyTale">
+          <label for="FairyTale">FairyTale</label>
+          <input type="checkbox" name="genre" id="Fiction" value="Fiction">
+          <label for="Fiction">Fiction</label>
+          
+
+      </section>
+      <hr>
+      <input class="submit" type="submit" value="Submit">
+  </form>
+
+  
+
+</body>
+</html>
